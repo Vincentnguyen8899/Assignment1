@@ -15,7 +15,7 @@ public class EnrolmentManagement {
                 String data = myFilee.nextLine();
                 String[] arr = data.split(",");
                 Student S = new Student(arr[0], arr[1], arr[2]);
-                Course C = new Course(arr[3], arr[4], Integer.parseInt(arr[5]));
+                Course C = new Course(arr[3], arr[4], Integer.parseInt(arr[5]));// change integer to String
                 StudentList.add(S);
                 CourseList.add(C);
                 SemesterList.add(arr[6]);
