@@ -7,7 +7,7 @@ public class Course {
 
 
 
-    public Course(String ID, String name, int credits) {
+    public Course(String ID, String name, int credits) { // set the Course's Instructor
         this.courseID = ID;
         this.courseName = name;
         this.Credits = credits;
@@ -28,7 +28,7 @@ public class Course {
 
     public ArrayList<Course> getCourseList() {return courseList;}
 
-    public boolean add(Course C){
+    public boolean add(Course C){ // add Course to courseList
         if (courseList.contains(C)) {
             return false;
         }
