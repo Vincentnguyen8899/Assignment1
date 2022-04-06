@@ -1,6 +1,6 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.io.File; // import the File class
+import java.io.FileNotFoundException; // Import this class to execute the error
+import java.util.Scanner; // import the Scanner to read the text files
 import java.util.ArrayList;
 public class EnrolmentManagement {
     public static void main(String[] args) {
@@ -33,7 +33,7 @@ public class EnrolmentManagement {
             Scanner scanner = new Scanner(System.in);
             int answer = scanner.nextInt();
 
-            switch (answer) {
+            switch (answer) { //The expression's value is compared against the values in each condition.
                 case 1:
                     boolean b = true;
                     do {
