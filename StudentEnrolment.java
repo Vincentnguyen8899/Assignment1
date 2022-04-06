@@ -24,7 +24,7 @@ public class StudentEnrolment {
         return semester;
     }
 
-    public boolean add(StudentEnrolment E){ // add E to the Enrolment Management
+    public boolean add(StudentEnrolment E){ // add E to the StudentEnrolmentList
         if (studentEnrolmentList.contains(E)) {
             return false;
         }
