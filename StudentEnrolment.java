@@ -6,7 +6,7 @@ public class StudentEnrolment {
     private String semester;
     private ArrayList<StudentEnrolment> studentEnrolmentList;
 
-    public StudentEnrolment(Student student, Course course, String semester) {
+    public StudentEnrolment(Student student, Course course, String semester) { // set the StudentEnrolment's Instructor
         this.student = student;
         this.course = course;
         this.semester = semester;
@@ -24,7 +24,7 @@ public class StudentEnrolment {
         return semester;
     }
 
-    public boolean add(StudentEnrolment E){
+    public boolean add(StudentEnrolment E){ // add E to the Enrolment Management
         if (studentEnrolmentList.contains(E)) {
             return false;
         }
