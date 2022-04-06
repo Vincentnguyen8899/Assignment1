@@ -6,7 +6,7 @@ public class Student {
     private ArrayList<Student> studentList;
 
 
-    public Student(String ID, String name, String Birthdate) {
+    public Student(String ID, String name, String Birthdate) { // set the Student's Instructor
         this.studentID = ID;
         this.studentName = name;
         this.Birthdate = Birthdate;
@@ -20,7 +20,7 @@ public class Student {
 
     public ArrayList<Student> getStudentList() {return studentList;}
 
-    public boolean add(Student S){
+    public boolean add(Student S){ // add Student to the StudentList
         if (studentList.contains(S)) {
             return false;
         }
